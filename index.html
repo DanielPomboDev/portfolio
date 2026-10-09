@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Daniel G. Pombo — Backend Developer / Software Engineer (BSIT). Node.js, React, MySQL, MongoDB. SmartLeave, DTR & Payroll Automation, HIRE-EV." />
+<meta name="theme-color" content="#FAFAFA" />
+<title>Daniel G. Pombo — Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  :root {
+    --color-background: #FAFAFA;
+    --color-foreground: #09090B;
+    --color-primary: #18181B;
+    --color-accent: #2563EB;
+    --color-card: #FFFFFF;
+    --color-muted: #E8ECF0;
+    --color-muted-fg: #475569;
+    --color-border: #E4E4E7;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--color-background); color: var(--color-foreground); }
+  .font-display { font-family: 'Archivo', sans-serif; }
+  .font-grotesk { font-family: 'Space Grotesk', monospace; }
+  .brutal-card { background: var(--color-card); border: 2px solid var(--color-primary); box-shadow: 6px 6px 0 var(--color-primary); }
+  .brutal-btn { border: 2px solid var(--color-primary); box-shadow: 4px 4px 0 var(--color-primary); transition: transform 150ms ease, box-shadow 150ms ease; }
+  .brutal-btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--color-primary); }
+  .brutal-btn:active { transform: translate(2px, 2px); box-shadow: 0 0 0 var(--color-primary); }
+  .brutal-btn-accent { background: var(--color-accent); border-color: var(--color-primary); color: #fff; }
+  .tag { border: 1.5px solid var(--color-primary); }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+  .grid-bg {
+    background-image: linear-gradient(var(--color-border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .marquee { overflow: hidden; white-space: nowrap; }
+  .marquee-track { display: inline-flex; gap: 2.5rem; animation: marquee 22s linear infinite; }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 500ms ease, transform 500ms ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .marquee-track { animation: none; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body class="antialiased">
+<a href="#work" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:border-2 focus:border-black">Skip to work</a>
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 bg-[#FAFAFA]/95 backdrop-blur border-b-2 border-[#18181B]">
+  <nav class="max-w-6xl mx-auto px-5 h-[72px] flex items-center justify-between" aria-label="Main">
+    <a href="#top" class="font-display font-extrabold text-xl tracking-tight border-2 border-[#18181B] px-3 py-1 bg-white shadow-[4px_4px_0_#18181B]">DP<span class="text-[#2563EB]">.</span></a>
+    <div class="hidden md:flex items-center gap-8 font-grotesk text-sm font-medium">
+      <a href="#work" class="hover:text-[#2563EB] hover:underline underline-offset-4">Work</a>
+      <a href="#about" class="hover:text-[#2563EB] hover:underline underline-offset-4">About</a>
+      <a href="#experience" class="hover:text-[#2563EB] hover:underline underline-offset-4">Experience</a>
+      <a href="#contact" class="hover:text-[#2563EB] hover:underline underline-offset-4">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="brutal-btn brutal-btn-accent font-grotesk text-sm font-semibold px-5 py-2.5 cursor-pointer">Hire me</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="grid-bg border-b-2 border-[#18181B]">
+  <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-center">
+    <div class="md:col-span-7">
+      <p class="reveal font-grotesk text-sm font-semibold tracking-widest uppercase inline-block bg-white border-2 border-[#18181B] px-3 py-1 shadow-[4px_4px_0_#18181B] mb-6">● Open to Backend / Software Engineer roles — willing to relocate to Manila / NCR</p>
+      <h1 class="reveal font-display font-extrabold tracking-tight leading-[0.95] text-5xl md:text-7xl">DANIEL G.<br/>POMBO<span class="text-[#2563EB]">.</span><br/><span class="text-3xl md:text-5xl font-bold">Backend Developer</span></h1>
+      <p class="reveal mt-6 text-lg text-[#475569] max-w-xl">BSIT fresh graduate with Junior Developer internship experience. I built full-stack contributions to a production HR leave system and shipped a DTR + payroll automation tool solo — from requirements to deployment.</p>
+      <p class="reveal mt-3 font-grotesk text-sm text-[#475569]">San Julian, Eastern Samar, Philippines · 09511830414 · danpombo08@gmail.com</p>
+      <div class="reveal mt-8 flex flex-wrap gap-4">
+        <a href="#work" class="brutal-btn brutal-btn-accent font-grotesk font-semibold px-7 py-3.5 cursor-pointer">View work ↓</a>
+        <a href="#contact" class="brutal-btn bg-white font-grotesk font-semibold px-7 py-3.5 cursor-pointer">Contact me</a>
+      </div>
+      <dl class="reveal mt-10 grid grid-cols-3 max-w-lg gap-4 font-grotesk">
+        <div class="brutal-card p-4 text-center"><dt class="text-xs uppercase tracking-wider text-[#475569]">Degree</dt><dd class="font-display font-extrabold text-xl">BSIT '26</dd></div>
+        <div class="brutal-card p-4 text-center"><dt class="text-xs uppercase tracking-wider text-[#475569]">Owned projects</dt><dd class="font-display font-extrabold text-xl">2</dd></div>
+        <div class="brutal-card p-4 text-center"><dt class="text-xs uppercase tracking-wider text-[#475569]">Internship</dt><dd class="font-display font-extrabold text-xl">Jan–May '26</dd></div>
+      </dl>
+    </div>
+    <div class="md:col-span-5">
+      <div class="reveal brutal-card p-3">
+        <div class="bg-[#18181B] text-white font-grotesk text-xs px-4 py-3 flex items-center justify-between">
+          <span>● ● ●</span><span>daniel-pombo — profile.v1</span>
+        </div>
+        <div class="p-8 md:p-10 bg-white">
+          <p class="font-grotesk text-sm text-[#475569]">/01 — Core stack</p>
+          <p class="font-display font-bold text-3xl mt-2 leading-tight">APIs with intent.</p>
+          <div class="mt-6 flex flex-wrap gap-2 font-grotesk text-xs font-semibold">
+            <span class="tag px-3 py-1 bg-[#E8ECF0]">JavaScript</span>
+            <span class="tag px-3 py-1 bg-[#E8ECF0]">Python</span>
+            <span class="tag px-3 py-1 bg-[#E8ECF0]">Node.js</span>
+            <span class="tag px-3 py-1 bg-[#E8ECF0]">React</span>
+            <span class="tag px-3 py-1 bg-[#2563EB] text-white">MySQL</span>
+            <span class="tag px-3 py-1 bg-white">MongoDB</span>
+          </div>
+          <div class="mt-6 h-2 bg-[#E8ECF0] border border-[#18181B]"><div class="h-full w-4/5 bg-[#2563EB]"></div></div>
+          <p class="mt-2 font-grotesk text-xs text-[#475569]">Focus: backend logic, database design, API integration</p>
+          <div class="mt-4 flex flex-wrap gap-3 font-grotesk text-xs font-semibold">
+            <a href="https://github.com/DanielPomboDev" class="underline underline-offset-4 hover:text-[#2563EB]">github.com/DanielPomboDev</a>
+            <a href="https://linkedin.com/in/daniel-pombo" class="underline underline-offset-4 hover:text-[#2563EB]">linkedin.com/in/daniel-pombo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="marquee border-t-2 border-[#18181B] bg-[#18181B] text-white font-grotesk font-semibold text-sm py-3" aria-hidden="true">
+    <div class="marquee-track">
+      <span>NODE.JS ✦ REACT ✦ MYSQL ✦ MONGODB ✦ REST APIS ✦ GIT ✦ AGILE/SCRUM ✦&nbsp;</span>
+      <span>NODE.JS ✦ REACT ✦ MYSQL ✦ MONGODB ✦ REST APIS ✦ GIT ✦ AGILE/SCRUM ✦&nbsp;</span>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+  <div class="flex flex-wrap items-end justify-between gap-4 mb-10">
+    <div>
+      <p class="font-grotesk text-sm font-semibold tracking-widest uppercase text-[#2563EB]">/02 — Selected work</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">Projects</h2>
+    </div>
+    <a href="https://github.com/DanielPomboDev" class="font-grotesk text-sm font-semibold underline underline-offset-4 hover:text-[#2563EB]">github.com/DanielPomboDev →</a>
+  </div>
+  <div class="grid md:grid-cols-2 gap-8">
+    <article class="reveal brutal-card overflow-hidden">
+      <div class="h-44 bg-[#E8ECF0] border-b-2 border-[#18181B] grid place-items-center font-display font-extrabold text-3xl px-6 text-center">SmartLeave<span class="text-[#2563EB]">.</span></div>
+      <div class="p-6">
+        <div class="flex flex-wrap gap-2 font-grotesk text-xs font-semibold"><span class="tag px-2 py-0.5">Thesis / Capstone</span><span class="tag px-2 py-0.5">Full-Stack</span><span class="tag px-2 py-0.5">Group</span></div>
+        <h3 class="font-display font-bold text-2xl mt-3">SmartLeave: HR Leave Management System</h3>
+        <p class="text-[#475569] mt-1 font-grotesk text-sm">JavaScript · Node.js · React · MySQL/MongoDB</p>
+        <ul class="mt-3 space-y-2 text-[15px] list-disc pl-5 text-[#09090B]">
+          <li>Digitized LGU employee leave filing per official CSC leave rules — replaced paper-based process.</li>
+          <li>Built React frontend + Node.js backend: application workflows, approval routing, leave-credit computation.</li>
+          <li>Designed DB schema for leave types, balances, and approval statuses; collaborated via Git with testing/debugging.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="reveal brutal-card overflow-hidden">
+      <div class="h-44 bg-[#2563EB] text-white border-b-2 border-[#18181B] grid place-items-center font-display font-extrabold text-3xl px-6 text-center">KJV BIBLE<span class="text-white">.</span></div>
+      <div class="p-6">
+        <div class="flex flex-wrap gap-2 font-grotesk text-xs font-semibold"><span class="tag px-2 py-0.5">Solo</span><span class="tag px-2 py-0.5">Desktop app</span><span class="tag px-2 py-0.5">Offline-first</span></div>
+        <h3 class="font-display font-bold text-2xl mt-3">KJV Bible — offline Windows app</h3>
+        <p class="text-[#475569] mt-1 font-grotesk text-sm">TypeScript · Tauri · Vite</p>
+        <ul class="mt-3 space-y-2 text-[15px] list-disc pl-5 text-[#09090B]">
+          <li>Free, fully offline King James Version: all 66 books (31,102 verses), reopens where you left off.</li>
+          <li>Instant search + reference jump (e.g. John 3:16), multi-verse select, sermon deck builder with reorder/backgrounds, export to PowerPoint (.pptx).</li>
+          <li>Light/dark theme, adjustable reading size, shortcuts dialog; all data stays local. <a href="https://github.com/DanielPomboDev/kjv-bible-app" class="font-grotesk font-semibold text-[#2563EB] underline underline-offset-4">Repo →</a> <a href="https://github.com/DanielPomboDev/kjv-bible-app/releases" class="font-grotesk font-semibold text-[#2563EB] underline underline-offset-4">Download .exe →</a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ABOUT + EXPERIENCE -->
+<section id="about" class="border-y-2 border-[#18181B] bg-white">
+  <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-2 gap-10">
+    <div>
+      <p class="font-grotesk text-sm font-semibold tracking-widest uppercase text-[#2563EB]">/03 — About</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">Backend-first, full-stack capable.</h2>
+      <p class="mt-4 text-[#475569] text-lg">Fresh BSIT graduate (ESSU, May 2026) with hands-on Junior Developer internship experience across the full lifecycle — requirements, coding, testing, deployment, and client presentation. Seeking a Backend Developer or Software Engineer role.</p>
+      <ul class="mt-6 flex flex-wrap gap-2 font-grotesk text-xs font-semibold" aria-label="Technical skills">
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">JavaScript</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">Python</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">HTML / CSS</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">Node.js</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">React</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">MySQL</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">MongoDB</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">Git / GitHub</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">REST APIs</li>
+        <li class="tag px-3 py-1 bg-[#FAFAFA]">Agile/Scrum basics</li>
+      </ul>
+      <p class="mt-4 font-grotesk text-sm text-[#475569]">Core: full-stack web dev · database design · API integration · problem solving · team collaboration · client presentation</p>
+    </div>
+    <div id="experience" class="grid gap-4 content-start">
+      <div class="reveal brutal-card p-5">
+        <p class="font-grotesk text-xs font-semibold tracking-widest uppercase text-[#2563EB]">Experience</p>
+        <h3 class="font-display font-bold text-lg mt-1">Junior Developer (Intern) — Advanced Thinkers Co.</h3>
+        <p class="font-grotesk text-sm text-[#475569]">Tacloban City · Jan 2026 – May 2026</p>
+        <ul class="mt-2 text-sm space-y-1 list-disc pl-5">
+          <li>Built DTR system with one-click logging + per-cutoff salary computation.</li>
+          <li>Contributed UI to HIRE-EV; demoed to stakeholders.</li>
+        </ul>
+      </div>
+      <div class="reveal brutal-card p-5">
+        <p class="font-grotesk text-xs font-semibold tracking-widest uppercase text-[#2563EB]">Education</p>
+        <h3 class="font-display font-bold text-lg mt-1">BS Information Technology</h3>
+        <p class="font-grotesk text-sm text-[#475569]">Eastern Samar State University · Graduated May 2026</p>
+      </div>
+      <div class="reveal brutal-card p-5">
+        <p class="font-grotesk text-xs font-semibold tracking-widest uppercase text-[#2563EB]">What I do</p>
+        <ul class="mt-2 text-sm space-y-1 list-disc pl-5">
+          <li>REST APIs &amp; backend logic (Node.js)</li>
+          <li>Database design (MySQL / MongoDB)</li>
+          <li>Full-stack delivery (React + Node) end-to-end</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+  <div class="brutal-card bg-[#18181B] text-white p-8 md:p-14 grid md:grid-cols-2 gap-10">
+    <div>
+      <p class="font-grotesk text-sm font-semibold tracking-widest uppercase text-[#93B4FD]">/04 — Contact</p>
+      <h2 class="font-display font-extrabold text-4xl md:text-5xl tracking-tight mt-2">Let's talk backend roles.</h2>
+      <p class="mt-4 text-white/70">Based in San Julian, Eastern Samar — willing to relocate to Manila / NCR. Replies within 48h.</p>
+      <div class="mt-6 grid gap-2 font-grotesk text-sm font-semibold">
+        <a href="mailto:danpombo08@gmail.com" class="brutal-btn bg-white text-[#18181B] px-5 py-2.5 cursor-pointer w-fit">danpombo08@gmail.com</a>
+        <a href="tel:+639511830414" class="text-white/80 hover:text-white underline underline-offset-4 w-fit">09511830414</a>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://linkedin.com/in/daniel-pombo" class="text-white/80 hover:text-white underline underline-offset-4">linkedin.com/in/daniel-pombo</a>
+          <a href="https://github.com/DanielPomboDev" class="text-white/80 hover:text-white underline underline-offset-4">github.com/DanielPomboDev</a>
+        </div>
+      </div>
+    </div>
+    <form class="bg-white text-[#09090B] border-2 border-white p-6 grid gap-4" action="mailto:danpombo08@gmail.com" method="post" enctype="text/plain">
+      <label class="grid gap-1 font-grotesk text-sm font-semibold">Name<input required name="name" class="border-2 border-[#18181B] px-3 py-2.5 font-normal" placeholder="Recruiter name" /></label>
+      <label class="grid gap-1 font-grotesk text-sm font-semibold">Email<input required type="email" name="email" class="border-2 border-[#18181B] px-3 py-2.5 font-normal" placeholder="you@company.com" /></label>
+      <label class="grid gap-1 font-grotesk text-sm font-semibold">Message<textarea required name="message" rows="4" class="border-2 border-[#18181B] px-3 py-2.5 font-normal" placeholder="Role, location, timeline…"></textarea></label>
+      <button type="submit" class="brutal-btn brutal-btn-accent font-grotesk font-semibold px-5 py-3 cursor-pointer">Send message →</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="border-t-2 border-[#18181B] bg-white">
+  <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row gap-4 items-center justify-between font-grotesk text-sm">
+    <p class="font-bold">DP<span class="text-[#2563EB]">.</span> © 2026 Daniel G. Pombo</p>
+    <div class="flex gap-6 font-medium">
+      <a href="https://github.com/DanielPomboDev" class="hover:text-[#2563EB] underline underline-offset-4">GitHub</a>
+      <a href="https://linkedin.com/in/daniel-pombo" class="hover:text-[#2563EB] underline underline-offset-4">LinkedIn</a>
+      <a href="mailto:danpombo08@gmail.com" class="hover:text-[#2563EB] underline underline-offset-4">Email</a>
+    </div>
+    <p class="text-[#475569]">San Julian, Eastern Samar · Open to Manila / NCR</p>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
